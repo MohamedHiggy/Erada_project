@@ -1,0 +1,108 @@
+.header{
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    .Logo{
+        display: inline-block;
+        width: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    .icons-nav{
+        margin-right: 50px;
+        display: inline-block;
+        i{
+            background-color: #f9f9f9;
+            padding: 10px;
+            color: #555;
+            border-radius: 50%;
+            margin-right: 10px;
+            padding: 10px;
+            color: #555;
+            cursor: pointer;
+            &:hover {
+                color: #00B98B;
+            }
+        }
+        .toggle-sidebar {
+            cursor: pointer;
+            &:hover {
+                color: #00B98B;
+            }
+        }
+    }
+    .usermenu-container {
+        float: left;
+        .username {
+            cursor: pointer;
+            .avatar {
+                width: 40px;    
+                height: 40px;
+            }
+            .user {
+                font-weight: bold;
+                color: #777;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+        }
+        .dropdown-menu {
+            min-width: 400px;
+            border: none;
+            padding: 20px;
+            top: 10px !important;
+            border: 1px solid #ddd;
+            &:before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                left: 40px;
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent transparent #ddd transparent;
+            }
+            .user-info {
+                h3 {
+                    font-weight: bold;
+                    color: #27ae60;
+                    text-align: right;
+                }
+                p {
+                    color: #888;
+                    text-align: right;
+                }
+            }
+            .activities-list {
+                li {
+                    padding: 10px;
+                    text-align: right;
+                }
+            }
+            .usermenu-links {
+                .link-box {
+                    background-color: #fff;
+                    padding: 5px 10px;
+                    border-radius: 6px;
+                    border: 1px solid #f3f3f3;
+                    text-align: left;
+                i {
+                    float: right;
+                    font-size: 15px;
+                    position: relative;
+                    top: 5px;
+                    &.fa-gear {
+                    color: #2980b9;
+                    }
+                    &.fa-user {
+                    color: #16a085;
+                    }
+                    &.fa-power-off {
+                    color: #c0392b;
+                    }
+                }
+                }
+            }
+        }
+    }
+}

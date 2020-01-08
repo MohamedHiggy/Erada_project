@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>الشكاوى</title>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page complaints-page">
+        <!--________________ Start Sidebar ________________-->
+        <div class="sidebar">
+            <div class="text-center btn-area">
+                <a href="#" class="text-center btn-area">+ عمل طلب</a>
+            </div>
+            <ul class="links-area list-unstyled">
+                <li>
+                    <a href="index.html">عرض عام <img src="images/user.svg" class="icon-nav" alt=""></a>
+                </li>
+                <li>
+                    <a href="#">صفحات <img src="images/user.svg" class="icon-nav" alt=""></a>
+                </li>
+                <li>
+                    <a href="#">الأنشطه <img src="images/delivery-truck.svg" class="icon-nav" alt=""></a>
+                </li>
+                <li class="sidebar-active-links">
+                    <a href="complaints.html">الشكاوى <img src="images/Group 77.svg" class="icon-nav" alt=""></a>
+                </li>
+            </ul>
+            <ul class="links-area list-unstyled buttom-links-area">
+                <li>
+                    <a href="#">الإعدادات <img src="images/settings.svg" alt="" class="icon-nav"> </a>
+                </li>
+                <li>
+                    <a href="#">تسجيل الخروج  <img src="images/sign-out.svg" alt=""  class="icon-nav"> </a>
+                </li>
+            </ul>
+        </div>
+
+            <!--________________ Start content area ________________-->
+            <div class="content-area">
+                <!--========== header_Navbar ==========-->
+                <div class="header">
+                    <div class="container-fluid">
+                        <div class="Logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <div class="icons-nav">
+                            <i class="fa fa-exchange fa-lg toggle-sidebar"></i>
+                            <i class="fa fa-expand fa-lg toggle-fullscreen"></i>
+                        </div>
+                        <div class="dropdown usermenu-container">
+                            <div class="username" id="usermenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/6.jpg" alt="user avatar" class="avatar rounded-circle">
+                                <span class="user">محمد حازم</span>
+                                <i class="fa fa-angle-down fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--========== content ==========-->
+                <div class="container-fluid">
+                    <div class="content">
+                        <!--header of the content-->
+                        <div class="page-head">
+                            <h1 class="page-title">الطلبات</h1>
+                        </div>
+                        <!--links of the content-->
+                        <div class="links-tab-menu">
+                            <ul class="nav-list">
+                                <li class="list tab-active" data-tab-target="#Ongoing">
+                                    <a href="#Ongoing" class="active-tab">الناقلات</a>
+                                </li>
+                                <li class="list" data-tab-target="#Accepted">
+                                    <a href="#Accepted">السائقين</a>
+                                </li>
+                                <li class="list" data-tab-target="#Rejected">
+                                    <a href="#Rejected">العملاء</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!--filters of the content-->
+                        <div class="filter-menu">
+                            <ul class="nav-list">
+                                <li class="list dropdown">
+                                    <a class="btn btn-light nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        الحجم
+                                        <img class="mr-1 .angle-top" src="images/Path 30.svg" alt="">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">كبير</a>
+                                        <a class="dropdown-item" href="#">صغير</a>
+                                        <a class="dropdown-item" href="#">وسط</a>
+                                    </div>
+                                </li>
+                                <li class="list search-box">
+                                    <a href="#" class="search-btn"> <img src="images/magnifying-glass.svg" alt=""> بحث </a>
+                                    <input type="text" class="search-txt" name="search" placeholder="ابحث هنا..." id="search" autocomplete="off">
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--tables of the content-->
+                        <div class="table-area">
+                            <!--Ongoing-->
+                            <table class="table table-borderless tab-active" id="Ongoing" data-tab-content>
+                                <thead>
+                                    <tr class="border-radius">
+                                        <th scope="col">رقم الناقلة</th>
+                                        <th scope="col">السعة</th>
+                                        <th scope="col">رقم الكليشة</th>
+                                        <th scope="col">اسم المالك</th>
+                                        <th scope="col">عدد السائقين</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable">
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ا ب ع 546</td class="redius-border">
+                                        <td>18 طن</td>
+                                        <td>57</td>
+                                        <td>سيد حسن</td>
+                                        <td>4</td>
+                                        <td class="buttons complaints last-redius-border">
+                                            <span class="badge badge-secondary"><i class="fa fa-circle"></i> قادم الى المحطة</span> 
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ا ب ع 546</td class="redius-border">
+                                        <td>18 طن</td>
+                                        <td>57</td>
+                                        <td>سيد حسن</td>
+                                        <td>4</td>
+                                        <td class="buttons complaints last-redius-border">
+                                            <span class="badge badge-secondary"><i class="fa fa-circle"></i> قادم الى المحطة</span> 
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ا ب ع 546</td class="redius-border">
+                                        <td>18 طن</td>
+                                        <td>57</td>
+                                        <td>سيد حسن</td>
+                                        <td>4</td>
+                                        <td class="buttons complaints last-redius-border">
+                                            <span class="badge badge-secondary"><i class="fa fa-circle"></i> قادم الى المحطة</span> 
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ا ب ع 546</td class="redius-border">
+                                        <td>18 طن</td>
+                                        <td>57</td>
+                                        <td>سيد حسن</td>
+                                        <td>4</td>
+                                        <td class="buttons complaints last-redius-border">
+                                            <span class="badge badge-secondary"><i class="fa fa-circle"></i> قادم الى المحطة</span> 
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ا ب ع 546</td class="redius-border">
+                                        <td>18 طن</td>
+                                        <td>57</td>
+                                        <td>سيد حسن</td>
+                                        <td>4</td>
+                                        <td class="buttons complaints last-redius-border">
+                                            <span class="badge badge-secondary"><i class="fa fa-circle"></i> قادم الى المحطة</span> 
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ا ب ع 546</td class="redius-border">
+                                        <td>18 طن</td>
+                                        <td>57</td>
+                                        <td>سيد حسن</td>
+                                        <td>4</td>
+                                        <td class="buttons complaints last-redius-border">
+                                            <span class="badge badge-secondary"><i class="fa fa-circle"></i> قادم الى المحطة</span> 
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ا ب ع 546</td class="redius-border">
+                                        <td>18 طن</td>
+                                        <td>57</td>
+                                        <td>سيد حسن</td>
+                                        <td>4</td>
+                                        <td class="buttons complaints last-redius-border">
+                                            <span class="badge badge-secondary"><i class="fa fa-circle"></i> قادم الى المحطة</span> 
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ا ب ع 546</td class="redius-border">
+                                        <td>18 طن</td>
+                                        <td>57</td>
+                                        <td>سيد حسن</td>
+                                        <td>4</td>
+                                        <td class="buttons complaints last-redius-border">
+                                            <span class="badge badge-secondary"><i class="fa fa-circle"></i> قادم الى المحطة</span> 
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!--Accepted-->
+                            <table class="table table-borderless" id="Accepted" data-tab-content>
+                                <thead>
+                                    <tr class="border-radius">
+                                        <th scope="col">رقم الكليشة</th>
+                                        <th scope="col">السعة</th>
+                                        <th scope="col">السعر</th>
+                                        <th scope="col">وقت الدخول</th>
+                                        <th scope="col">وقت التسليم</th>
+                                        <th scope="col">رقم الطلب</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable">
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ضغير</td>
+                                        <td>18 طن</td>
+                                        <td>200 ريال</td>
+                                        <td>45 كم</td>
+                                        <td>4:21 ص - أمس</td>
+                                        <td>544225345</td>
+                                        <td class="buttons last-redius-border"> 
+                                            <button type="button" class="btn btn-light refuse"><img src="images/banRed.svg" alt=""> محظور</button> 
+                                            <button type="button" class="btn btn-light accept"><img src="images/Group 77.svg" alt=""> قيد التوصيل </button>
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td class="first-redius-border">ضغير</td>
+                                        <td>18 طن</td>
+                                        <td>200 ريال</td>
+                                        <td>45 كم</td>
+                                        <td>4:21 ص - أمس</td>
+                                        <td>544225345</td>
+                                        <td class="buttons last-redius-border"> 
+                                            <button type="button" class="btn btn-light refuse"><img src="images/banBlack.svg" alt=""> غير محظور </button> 
+                                            <button type="button" class="btn btn-light accept"><img src="images/Group 77.svg" alt=""> قيد التوصيل </button>
+                                            <div class="dropdown">
+                                                <button type="button" class="btn scrool-btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v mr-1 ml-5" ></i>
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!--Rejected-->
+                            <table class="table table-borderless" id="Rejected" data-tab-content>
+                                <thead>
+                                    <tr class="border-radius">
+                                        <th scope="col">رقم الكليشة</th>
+                                        <th scope="col">السعة</th>
+                                        <th scope="col">السعر</th>
+                                        <th scope="col">وقت الدخول</th>
+                                        <th scope="col">وقت التسليم</th>
+                                        <th scope="col">رقم الطلب</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable">
+                                    <tr class="table-light">
+                                        <td>وسط</td>
+                                        <td>18 طن</td>
+                                        <td>200 ريال</td>
+                                        <td>45 كم</td>
+                                        <td>4:21 ص - أمس</td>
+                                        <td>544225345</td>
+                                        <td class="buttons">
+                                            <button type="button" class="btn btn-light accept">قبول</button> 
+                                            <button type="button" class="btn btn-light refuse">رفض</button>
+                                            <button type="button" class="btn scrool-btn"><img class="mr-1 ml-5" src="images/Path 30.svg" alt=""></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td>وسط</td>
+                                        <td>18 طن</td>
+                                        <td>200 ريال</td>
+                                        <td>45 كم</td>
+                                        <td>4:21 ص - أمس</td>
+                                        <td>544225345</td>
+                                        <td class="buttons">
+                                            <button type="button" class="btn btn-light accept">قبول</button> 
+                                            <button type="button" class="btn btn-light refuse">رفض</button>
+                                            <button type="button" class="btn scrool-btn"><img class="mr-1 ml-5" src="images/Path 30.svg" alt=""></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td>وسط</td>
+                                        <td>18 طن</td>
+                                        <td>200 ريال</td>
+                                        <td>45 كم</td>
+                                        <td>4:21 ص - أمس</td>
+                                        <td>544225345</td>
+                                        <td class="buttons">
+                                            <button type="button" class="btn btn-light accept">قبول</button> 
+                                            <button type="button" class="btn btn-light refuse">رفض</button>
+                                            <button type="button" class="btn scrool-btn"><img class="mr-1 ml-5" src="images/Path 30.svg" alt=""></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td>وسط</td>
+                                        <td>18 طن</td>
+                                        <td>200 ريال</td>
+                                        <td>45 كم</td>
+                                        <td>4:21 ص - أمس</td>
+                                        <td>544225345</td>
+                                        <td class="buttons">
+                                            <button type="button" class="btn btn-light accept">قبول</button> 
+                                            <button type="button" class="btn btn-light refuse">رفض</button>
+                                            <button type="button" class="btn scrool-btn"><img class="mr-1 ml-5" src="images/Path 30.svg" alt=""></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- JavaScript
+    ================================================== -->
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

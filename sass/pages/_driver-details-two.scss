@@ -1,0 +1,256 @@
+.driver-details-two{
+    .content-area{
+        .header{
+            position: relative;
+            .notfication{
+                display: inline-block;
+                position: absolute;    
+                left: 200px;
+                top: 25px;
+                cursor: pointer;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background-color: #00B98B;
+                    border-radius: 50%;
+                    left: 13px;
+                }
+            }
+        }
+        .container-fluid{
+            position: relative;
+            .breadcrumb{
+                background-color: transparent;
+                .breadcrumb-item{
+                    &::before{
+                        content: "";
+                    }
+                }
+                li{
+                    color: #242424;
+                    font-weight: bold;
+                    font-size: 26px;
+                    a{
+                        color: #505050;
+                    }
+                    i{
+                        font-weight: normal;
+                    }
+                }
+            }
+            .driver-content-header{
+                width: 50%;
+                .card{
+                    border: 5px solid red;
+                    background-color: transparent;
+                    border: none;
+                }
+                img{
+                    width: 100px;
+                }
+                .card-body{
+                    h5{
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .driver-content-header-two{
+                position: absolute;
+                width: 50%;
+                left: 0;
+                top: 79px;
+                padding: 37px 15px;
+                text-align: left;
+                .btns-content{
+                    .badge-one{
+                        background-color: #ffdede;
+                        color: #f61818;
+                        width: 100px;
+                        padding: 10px 0;
+                        font-weight: bold;
+                        margin-left: 15px;
+                        font-size: 16px;
+                        border-radius: 5px;
+                    }
+                    .badge-two{
+                        background-color: #e2e7ee;
+                        color: #242424;
+                        width: 200px;
+                        padding: 10px 0;
+                        font-weight: bold;
+                        font-size: 16px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .driver-content{
+                .card{
+                    border: none;
+                    .card-header{
+                        background-color: #ffffff;
+                        padding-bottom: 0;
+                        .links-tab-menu{
+                            &:after{
+                                display: none;
+                            }
+                            .nav-list{
+                                .list{
+                                    margin-left: 50px;
+                                    .active-tab{
+                                        &:after{
+                                            left: 55%;
+                                            width: 150px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    [data-tab-content]{
+                        display: none;
+                    }
+                    .tab-active[data-tab-content]{
+                            display: inline-table;
+                    }
+                    .card-body{
+                        padding: 0;
+                        background-color: #ffffff;
+                        color: #000000;
+                        line-height: 2em;
+                        .Data{
+                            position: relative;
+                            width: 100%;
+                            .content{
+                                display: flex;
+                                padding:15px;
+                                border-bottom: 1px solid #cfcfcf;
+                                color: #242424;
+                                .title-content{
+                                    font-weight: bold;
+                                    width: 50%;
+                                    font-size: 20px;
+                                }
+                                .subTitle-content{
+                                    font-size: 16px;
+                                    width: 50%;
+                                    text-align: left;
+                                    .badge-one{
+                                        background-color: #ffdede;
+                                        color: #f61818;
+                                        width: 100px;
+                                        padding: 10px 0;
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        border-radius: 5px;
+                                    }
+                                }
+                                &:last-child{
+                                    border-bottom:none;
+                                }
+                                .title-content-two{
+                                    font-weight: bold;
+                                    width: 10%;
+                                    font-size: 20px;
+                                    span{
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        color: #c2c0c0;
+                                    }
+                                }
+                                .subTitle-content-two{
+                                    .nav-subTitle-content{
+                                        li{
+                                            padding: 0 0 15px 0;
+                                            display: flex;
+                                            .name{
+                                                font-weight: bold;
+                                                font-size: 16px;
+                                                margin: 0 15px;
+                                            }
+                                            span{
+                                                font-weight: bold;
+                                                font-size: 16px;
+                                                color: #c2c0c0;
+                                            }
+                                        }
+                                    }
+                                    text-align: right;
+                                    width: 90%;
+                                }
+                                button{
+                                    background-color: #707070;
+                                    width: 200px;
+                                    border-radius: 10px;
+                                    color: #ffffff;
+                                    font-weight: bold;
+                                }
+                                .btn-two{
+                                    
+                                    background-color: #00b98b;
+                                }
+                            }
+                        }
+                        .Requests{
+                            width: 100%;
+                            .content{
+                                display: flex;
+                                padding:15px;
+                                color: #242424;
+                                .title-content{
+                                    font-weight: bold;
+                                    width: 50%;
+                                    font-size: 20px;
+                                    span{
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        color: #c2c0c0;
+                                    }
+                                }
+                                .subTitle-content{
+                                    font-size: 20px;
+                                    width: 24%;
+                                    font-weight: bold;
+                                    text-align: left;
+                                    span{
+                                        margin-right: 20px;
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        color: #c2c0c0;
+                                    }
+                                }
+                            }
+                            .table{
+                                tbody{
+                                    tr{
+                                        border-bottom: 1px solid #cfcfcf;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-color: #eeeeee;
+                                        }
+                                        &:last-child{
+                                            border-bottom:none;
+                                        }
+                                        td{
+                                            font-weight: bold;
+                                        }
+                                        .closed{
+                                            color: #707070;
+                                        }
+                                        .ongoing{
+                                            color: #1496cc;
+                                        }
+                                        .desc{
+                                            color: #707070;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

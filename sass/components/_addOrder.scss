@@ -1,0 +1,186 @@
+:focus {
+    outline: none;
+  }
+  
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 13px;
+    color: #333;
+  }
+
+  p,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul {
+    margin: 0;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: none;
+  }
+  select option[value=""][disabled] {
+    display: none;
+  }
+  
+  
+  .steps .current-info,
+  .wizard > .steps .number {
+    display: none;
+  }
+  
+  #wizard {
+    position: relative;
+    background:transparent;
+    height: px;
+    width: 100%;
+    padding: 40px 0px;
+    border-radius: 10px;
+  }
+  #wizard.pt-86 {
+    padding-top: 86px;
+  }
+  
+  .steps {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+  }
+  .steps ul {
+    display: flex;
+  }
+  .steps ul li a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #666666;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  .steps ul li.current a {
+    width: 25px;
+    transition: all 0.5s ease;
+    border-radius: 5.5px;
+    background-color: #00B98B;
+  }
+  .modal-header{
+    text-align: right;
+    border: none;
+  }
+  .modal-header .close{
+    font-size: 3rem;
+  }
+  .modal-header h5{
+    color: #000000;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .modal-header p{
+    font-size: 18px;
+  }
+  .exampleModal tbody tr td{
+    text-align: left;
+  }
+  .form-control {
+    height: 40px;
+    width: 100%;
+    padding: 0 25px;
+    text-align: right;
+    color: #333;
+  }
+.actions li a {
+    padding: 0;
+    border: none;
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: #00B98B;
+    cursor: pointer;
+    font-size: 25px;
+    position: relative;
+    padding-right: 205px;
+    color: #fff;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+  }
+  .actions li[aria-disabled="true"] a {
+    display: none;
+  }
+  .actions li:first-child a {
+    background: #666666;
+  }
+  .actions li:last-child a {
+    font-weight: 400;
+  }
+  @-webkit-keyframes hvr-icon-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-5px);
+      transform: translateX(-5px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  @keyframes hvr-icon-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-5px);
+      transform: translateX(-5px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }

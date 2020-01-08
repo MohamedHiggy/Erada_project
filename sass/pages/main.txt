@@ -1,0 +1,2 @@
+if i have anything in project not dublicated in pages
+sass --watch sass/main.scss:css/main.css

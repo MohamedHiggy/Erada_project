@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "DroidArabicKufiBold";
+  src: url("/assets/fonts/droid-arabic-kufi/6afbe2c8257159c2fefd1b43cd951ba3/1b89eb34f74a02c0681727faadf48466/DroidArabicKufiBold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DroidArabicKufiRegular";
+  src: url("/assets/fonts/droid-arabic-kufi/6afbe2c8257159c2fefd1b43cd951ba3/a9b030e29a35f523a137ee0175be419f/DroidArabicKufiRegular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Droid Arabic Kufi";
+  src: url("/assets/fonts/droid-arabic-kufi/6afbe2c8257159c2fefd1b43cd951ba3/1b89eb34f74a02c0681727faadf48466/DroidArabicKufiBold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Droid Arabic Kufi";
+  src: url("/assets/fonts/droid-arabic-kufi/6afbe2c8257159c2fefd1b43cd951ba3/a9b030e29a35f523a137ee0175be419f/DroidArabicKufiRegular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,html{
+  font-family: "Droid Arabic Kufi", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.page {
+  min-height: 100vh;
+  .content-area {
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    float: left;
+    will-change: width;
+    background-color: #f2f1f6;
+    text-align: right;
+    position: relative;
+    transition: 0.3s;
+    float: left;
+    &.no-sidebar {
+      width: 100%;
+    }
+  }
+  .page-head {
+    padding: 20px;
+    .page-title {
+      font-weight: bold;
+      color: #242424;
+    }
+  }
+}

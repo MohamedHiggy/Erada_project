@@ -1,0 +1,20 @@
+.exit{
+    .content-area{
+        .header{
+            position: relative;
+        }
+        .table-area{
+            table{
+                tbody{
+                    td{
+                        width: 100px;
+                    }
+                    .accept{
+                        float: left;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
