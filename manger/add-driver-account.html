@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <!--- basic page needs
+        ================================================== -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>اضافة حساب للسائق</title>
+
+        <!-- CSS
+        ================================================== -->
+        <link rel="stylesheet" href="../css/vendor/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../css/sweetalert2.min.css" >  
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+
+    <body>
+        <div class="page client">
+            <!--________________ Start Sidebar ________________-->
+            <div class="sidebar">
+                <div class="text-center btn-area" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
+                    <a href="add-order.html" class="text-center btn-area">+ عمل طلب</a>
+                </div>
+                <ul class="links-area list-unstyled">
+                    <li>
+                        <a href="client.html">الطلبات <img src="../images/menu.svg" class="icon-nav" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="pages.html">صفحات <img src="../images/user.svg" class="icon-nav" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="punishment.html">العقوبات <img src="../images/ban.svg" class="icon-nav" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="reports.html">الشكاوى <img src="../images/Group 77.svg" class="icon-nav" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="links-area list-unstyled buttom-links-area">
+                    <li>
+                        <a href="#">الإعدادات <img src="../images/settings.svg" alt="" class="icon-nav"> </a>
+                    </li>
+                    <li>
+                        <a href="#">تسجيل الخروج  <img src="../images/sign-out.svg" alt=""  class="icon-nav"> </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--________________ Start content area ________________-->
+            <div class="content-area">
+                <!--========== header_Navbar ==========-->
+                <div class="header">
+                    <div class="container-fluid">
+                        <div class="Logo">
+                            <img src="../images/logo.png" alt="">
+                        </div>
+                        <div class="notfication" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.4" height="24" viewBox="0 0 20.4 24"><g transform="translate(-38.25)"><g transform="translate(38.25)"><path class="a" d="M48.45,24a2.407,2.407,0,0,0,2.4-2.4h-4.8A2.407,2.407,0,0,0,48.45,24Zm7.8-7.2V10.2a7.722,7.722,0,0,0-6-7.56V1.8a1.8,1.8,0,1,0-3.6,0v.84a7.722,7.722,0,0,0-6,7.56v6.6l-2.4,2.4v1.2h20.4V19.2ZM53.85,18H43.05V10.2a5.4,5.4,0,1,1,10.8,0Z" transform="translate(-38.25)"/></g></g></svg>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="header-notfi">
+                                    <span>20</span> <span>إشعار جديد</span>
+                                </div>
+                                <hr>
+                                <div class="content-notfi">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <img src="../images/6.jpg" alt="" class="avatar rounded-circle" width="30px"> 
+                                            <span class="desc">قام <span style="font-weight: bold;">أحمد مصطفى</span> بحظر عميل</span>
+                                            <p class="timer">منذ <span>7</span> دقائق </p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/6.jpg" alt="" class="avatar rounded-circle" width="30px"> 
+                                            <span class="desc">قام <span style="font-weight: bold;">أحمد مصطفى</span> بحظر عميل</span>
+                                            <p class="timer">منذ <span>7</span> دقائق </p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/6.jpg" alt="" class="avatar rounded-circle" width="30px"> 
+                                            <span class="desc">قام <span style="font-weight: bold;">أحمد مصطفى</span> بحظر عميل</span>
+                                            <p class="timer">منذ <span>7</span> دقائق </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bottom-notfi">
+                                    <a href="#">عرض جميع الإشعارات</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icons-nav">
+                            <i class="fa fa-exchange fa-lg toggle-sidebar"></i>
+                            <i class="fa fa-expand fa-lg toggle-fullscreen"></i>
+                        </div>
+                        <div class="dropdown usermenu-container">
+                            <div class="username" id="usermenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../images/6.jpg" alt="user avatar" class="avatar rounded-circle">
+                                <span class="user">محمد حازم</span>
+                                <i class="fa fa-angle-down fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--========== content ==========-->
+                <div class="container-fluid">
+                    <div class="content">
+                    <!--add order-->
+                    <div class="addOreders">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content shadow-sm">
+                                <div class="modal-header">
+                                    <div class="modal-title" id="exampleModalLabel" style="width: 70%">
+                                        <h5>إضافة حساب للسائق</h5>
+                                        <p>تأكد من جميع المعلومات قبل ادخالها</p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div id="wizard">
+                                                <div class="form-group">
+                                                    <h3>البيانات الشخصية</h3>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input 
+                                                        type="text" 
+                                                        name="name"
+                                                        class="form-control" 
+                                                        placeholder="الاسم بالكامل">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input 
+                                                        type="text" 
+                                                        name="id_number"
+                                                        class="form-control" 
+                                                        placeholder="رقم الهوية">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input 
+                                                        type="text" 
+                                                        name="mobile_number"
+                                                        class="form-control" 
+                                                        placeholder="رقم الجوال">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input 
+                                                        type="text" 
+                                                        name="number_Identity"
+                                                        class="form-control" 
+                                                        placeholder="رقم الإقامة">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input 
+                                                        type="text" 
+                                                        name="place"
+                                                        class="form-control" 
+                                                        placeholder="رقم الناقلة الذى سيعمل عليها">
+                                                </div>
+                                                <div class="form-group">
+                                                    <button class="btn add_driver_account">تأكيد الإضافة</button>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript
+        ================================================== -->
+        <script src="../js/vendor/jquery-3.4.1.min.js"></script>
+        <script src="../js/vendor/jquery.steps.js"></script>
+        <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+        <script src="../js/sweetalert2.all.min.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

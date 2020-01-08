@@ -71,7 +71,6 @@ $(function() {
         $('.form-holder').removeClass("active");
         $(this).parent().addClass("active");
     });
-
 });
 
 var elem = document.documentElement;

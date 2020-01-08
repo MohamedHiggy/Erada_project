@@ -60,7 +60,7 @@
     transform: translateX(-50%);
     bottom: -20px;
   }
-  .steps ul {
+  .steps ul { 
     display: flex;
   }
   .steps ul li a {
@@ -77,6 +77,11 @@
     border-radius: 5.5px;
     background-color: #00B98B;
   }
+  .modal-content{
+    padding: 20px 0 80px 0;
+    border: none;
+    border-radius: 10px;
+  }
   .modal-header{
     text-align: right;
     border: none;
@@ -85,12 +90,13 @@
     font-size: 3rem;
   }
   .modal-header h5{
-    color: #000000;
+    color: #242424;
     font-weight: bold;
     font-size: 25px;
   }
   .modal-header p{
     font-size: 18px;
+    color: #707070;
   }
   .exampleModal tbody tr td{
     text-align: left;
