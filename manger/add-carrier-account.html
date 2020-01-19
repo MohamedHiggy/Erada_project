@@ -155,9 +155,11 @@
                                                         name="place"
                                                         class="form-control" 
                                                         placeholder="المالك">
+                                                        
                                                 </div>
+                                                <div id="driverAdd"></div>
                                                 <div class="form-group">
-                                                    <a href="#" class="btn add_driver">+ أضافة سائق</a>
+                                                    <a href="#" class="btn add_driver" id="add_driver">+ أضافة سائق</a>
                                                 </div>
                                                 <div class="form-group">
                                                     <button class="btn add_driver_account">تأكيد الإضافة</button>
@@ -181,5 +183,14 @@
         <script src="../js/vendor/bootstrap.bundle.min.js"></script>
         <script src="../js/sweetalert2.all.min.js"></script>
         <script src="../js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                    var counter = 0;
+                    $('.form-group #add_driver').on('click', function () {
+                        counter++;
+                        $('#driverAdd').append('<div class="form-group"><input type="text" name="place" class="form-control" placeholder=" السائق رقم ' + counter + ' "></div>');
+                    });
+            });
+        </script>
     </body>
 </html>

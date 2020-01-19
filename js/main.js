@@ -71,6 +71,10 @@ $(function() {
         $('.form-holder').removeClass("active");
         $(this).parent().addClass("active");
     });
+    //delete Row
+    $('#mytable').on('click', '.deleteRow', function(){
+      $(this).closest('tr').remove();
+    })
 });
 
 var elem = document.documentElement;

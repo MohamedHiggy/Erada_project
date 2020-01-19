@@ -1,0 +1,152 @@
+.chart-page{
+    .content-area{
+        .chart-header{
+            max-height: 410px;
+            padding: 20px 0;
+            .content-box{
+                .title-header{
+                    padding: 15px 10px 0 10px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #242424;
+                }
+                background-color: #ffffff;
+                border-radius: 10px;
+                height: 100%;
+            }
+        }
+        .chart-bottom{
+            .col-lg-8{
+                .col-lg-6{
+                    padding-bottom: 10px;
+                }
+            }
+            .content-box{
+                height: 100%;
+                background-color: #ffffff;
+                border-radius: 10px;
+                .header{
+                    display: flex;
+                    padding-top: 0;
+                    .title-header{
+                        padding: 10px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #242424;
+                        width: 50%;
+                    }
+                    .btn-p{
+                        width: 50%;
+                        text-align: left;
+                        line-height: 4em;
+                        .browse-btn{
+                            background-color: rgba(0, 185, 139, 1);
+                            color: #ffffff;
+                            font-weight: bold;
+                            font-size: 16px;
+                            padding: 10px 40px;
+                            border-radius: 15px;
+                            text-decoration: none;
+                        }
+                        .brwose-btn-popup{
+                            line-height: 1em;
+                            border: none;
+                            padding: 0 30px;
+                            height: 40px;
+                        }
+                    }
+
+                }
+                .highlites{
+                    .content{
+                        padding:20px 10px;
+                        width: 100%;
+                        .title{
+                            position: relative;
+                            color: #242424;
+                            font-size: 15px;
+                            padding: 0 20px;
+                            .box-color{
+                                position: absolute;
+                                width: 15px;
+                                border-radius: 2px;
+                                height: 15px;
+                                top: 5px;
+                                right: 0;
+                            }
+                            .red{
+                                background-color: #CC1435;
+                            }
+                            .green{
+                                background-color: #00B98B;
+                            }
+                        }
+                        .sub-title{
+                            padding: 0 25px;
+                            color: #242424;
+                            font-weight: bold;
+                            font-size: 20px;
+                            .type-number{
+                                color: #707070;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .Complaints{
+                    .content{
+                        .title{
+                            .red{
+                                background-color: #1496CC;
+                            }
+                            .green{
+                                background-color: #F29122;
+                            }
+                        }
+                    }
+                }
+                .Orders{
+                    .content{
+                        .title{
+                            .red{
+                                background-color: #1496CC;
+                            }
+                            .green{
+                                background-color: #00B98B;
+                            }
+                        }
+                    }
+                }
+                .Conveyors{
+                    display: flex;
+                    justify-content: space-around;
+                    .content{
+                        .title{
+                            .blue{
+                                background-color: #1496CC;
+                            }
+                            .green{
+                                background-color: #00B98B;
+                            }
+                            .black{
+                                background-color: #505050;
+                            }
+                            .yellow{
+                                background-color: #F29122;
+                            }
+                        }
+                    }
+                }
+            }
+            .Conveyors{
+                height: auto;
+            }
+        }
+    }
+}
+
+.manger-reports-model-chart{
+    .modal-content{
+        padding: 50px 0 !important;
+    }
+}

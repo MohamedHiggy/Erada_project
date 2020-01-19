@@ -119,3 +119,80 @@
         }
     } 
 }
+
+.firstModel{
+    .modal-content{
+        .modal-body{
+            padding-left: 0;
+            padding-right: 0;
+            .header-title{
+                border-bottom: 10px solid #f8f6f6;
+            }
+            .header-content{
+                .title-header-content{
+                    padding:15px;
+                    p{
+                        color: #242424;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .content{
+                display: flex;
+                padding:15px;
+                border-bottom: 1px solid #E2E7EE;
+                color: #242424;
+                &:last-child{
+                    border-bottom:none;
+                }
+                .title-content{
+                    font-weight: bold;
+                    width: 50%;
+                    font-size: 16px;
+                    color: #242424;
+                    padding-bottom: 0;
+                }
+                .subTitle-content{
+                    font-size: 16px;
+                    width: 50%;
+                    text-align: left;
+                    color: #505050;
+                    padding-bottom: 0;
+                }
+                .accept-two{
+                    border-radius: 20px;
+                    background-color: #00b98b;
+                    width: 60%;
+                    margin-left: 10px;
+                    color: #ffffff;
+                    font-weight: bold;
+                }
+                .refuse-two{
+                    border-radius: 20px;
+                    background-color: #cc1435;
+                    color: #ffffff;
+                    font-weight: bold;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+.secondModel{
+    .modal-content{
+        .modal-body{
+            .header-title{
+                border-bottom: none;
+                .title-header-content{
+                    padding:15px;
+                    p{
+                        color: #242424;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

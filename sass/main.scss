@@ -1,15 +1,23 @@
 @import "layout/global";
 @import "layout/sidebar";
 @import "layout/header";
-@import "pages/login";
-@import "components/content";
+
 @import "pages/exit-officer";
 @import "pages/enter-officer";
+@import "pages/login";
 @import "pages/driver-details";
 @import "pages/driver-details-two";
 @import "pages/collector";
+@import "pages/manger-pages";
+@import "pages/chart";
 @import "pages/client";
+
+@import "components/datepicker";
+@import "components/content";
+@import "components/loader";
 @import "components/addOrder";
+@import "components/chart-doughnut";
 @import "components/add-Driver-carrier";
 @import "components/complaint";
+
 @import "settings/color";

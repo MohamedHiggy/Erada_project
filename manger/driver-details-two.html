@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <!--- basic page needs
+        ================================================== -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>السائقين</title>
+
+        <!-- CSS
+        ================================================== -->
+        <link rel="stylesheet" href="../css/vendor/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../css/sweetalert2.min.css" >  
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+
+    <body>
+        <div class="page driver-details-two">
+            <!--________________ Start Sidebar ________________-->
+            <div class="sidebar">
+                <div class="text-center btn-area" style="cursor: pointer;" data-toggle="modal" data-target="#exampleModal">
+                    <a href="add-order.html" class="text-center btn-area">+ عمل طلب</a>
+                </div>
+                <ul class="links-area list-unstyled">
+                    <li>
+                        <a href="manger.html">عرض عام <img src="../images/menu.svg" class="icon-nav" alt=""></a>
+                    </li>
+                    <li class="sidebar-active-links">
+                        <a href="manger-pages.html">الصفحات <img src="../images/user.svg" class="icon-nav" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="manger-reports.html">العقوبات <img src="../images/ban.svg" class="icon-nav" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="manger-punishment.html">الشكاوى <img src="../images/Group 77.svg" class="icon-nav" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="links-area list-unstyled buttom-links-area">
+                    <li>
+                        <a href="#">الإعدادات <img src="../images/settings.svg" alt="" class="icon-nav"> </a>
+                    </li>
+                    <li>
+                        <a href="#">تسجيل الخروج  <img src="../images/sign-out.svg" alt=""  class="icon-nav"> </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--________________ Start content area ________________-->
+            <div class="content-area">
+                <!--========== header_Navbar ==========-->
+                <div class="header">
+                    <div class="container-fluid">
+                        <div class="Logo">
+                            <img src="../images/logo.png" alt="">
+                        </div>
+                        <div class="notfication" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.4" height="24" viewBox="0 0 20.4 24"><g transform="translate(-38.25)"><g transform="translate(38.25)"><path class="a" d="M48.45,24a2.407,2.407,0,0,0,2.4-2.4h-4.8A2.407,2.407,0,0,0,48.45,24Zm7.8-7.2V10.2a7.722,7.722,0,0,0-6-7.56V1.8a1.8,1.8,0,1,0-3.6,0v.84a7.722,7.722,0,0,0-6,7.56v6.6l-2.4,2.4v1.2h20.4V19.2ZM53.85,18H43.05V10.2a5.4,5.4,0,1,1,10.8,0Z" transform="translate(-38.25)"/></g></g></svg>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="header-notfi">
+                                    <span>20</span> <span>إشعار جديد</span>
+                                </div>
+                                <hr>
+                                <div class="content-notfi">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <img src="../images/6.jpg" alt="" class="avatar rounded-circle" width="30px"> 
+                                            <span class="desc">قام <span style="font-weight: bold;">أحمد مصطفى</span> بحظر عميل</span>
+                                            <p class="timer">منذ <span>7</span> دقائق </p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/6.jpg" alt="" class="avatar rounded-circle" width="30px"> 
+                                            <span class="desc">قام <span style="font-weight: bold;">أحمد مصطفى</span> بحظر عميل</span>
+                                            <p class="timer">منذ <span>7</span> دقائق </p>
+                                        </li>
+                                        <li>
+                                            <img src="../images/6.jpg" alt="" class="avatar rounded-circle" width="30px"> 
+                                            <span class="desc">قام <span style="font-weight: bold;">أحمد مصطفى</span> بحظر عميل</span>
+                                            <p class="timer">منذ <span>7</span> دقائق </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bottom-notfi">
+                                    <a href="#">عرض جميع الإشعارات</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icons-nav">
+                            <i class="fa fa-exchange fa-lg toggle-sidebar"></i>
+                            <i class="fa fa-expand fa-lg toggle-fullscreen"></i>
+                        </div>
+                        <div class="dropdown usermenu-container">
+                            <div class="username" id="usermenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../images/6.jpg" alt="user avatar" class="avatar rounded-circle">
+                                <span class="user">محمد حازم</span>
+                                <i class="fa fa-angle-down fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--========== content ==========-->
+                <div class="container-fluid">
+                    <div class="content">
+                        <!--Breadcrumb-->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="pages.html">الصفحات</a></li>
+                              <li class="breadcrumb-item active" aria-current="page"><i class="fa fa-angle-left"></i> السائقين</li>
+                            </ol>
+                        </nav>
+                        <!--header of driver card details-->
+                        <div class="driver-content-header">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row">
+                                  <div class="col-md-2">
+                                    <img src="../images/6.jpg" class="card-img avatar rounded-circle" alt="">
+                                  </div>
+                                  <div class="col-md-10">
+                                    <div class="card-body">                                      
+                                        <h5 class="card-title">عامر أحمد</h5>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--buyttons of driver card details-->
+                        <div class="driver-content-header-two">
+                            <div class="btns-content">
+                                <span class="badge badge-one"><img src="../images/banRed.svg" alt=""> محظور</span>
+                                <span class="badge badge-two"><img src="../images/Group 77.svg" alt=""> لا يوجد شكاوى </span>
+                            </div>
+                        </div>
+
+                        <!--content of driver card details-->
+                        <div class="driver-content">
+                            <div class="card text-white bg-primary mb-3 shadow" style="max-width: 100%">
+                                <div class="card-header">
+                                    <!--links of the content-->
+                                    <div class="links-tab-menu">
+                                        <ul class="nav-list">
+                                            <li class="list tab-active"  data-tab-target="#Personal_data">
+                                                <a href="#Personal_data" class="active-tab">البيانات الشخصية</a>
+                                            </li>
+                                            <li class="list" data-tab-target="#Carrier_data">
+                                                <a href="#Carrier_data">بيانات الناقلة</a>
+                                            </li>
+                                            <li class="list" data-tab-target="#Requests">
+                                                <a href="#Requests">الطلبات</a>
+                                            </li>
+                                            <li class="list" data-tab-target="#Complaints">
+                                                <a href="#Complaints">الشكاوى</a>
+                                            </li>
+                                            <li class="list" data-tab-target="#Penalties">
+                                                <a href="#Penalties">العقوبات</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <!--Personal_data content-->
+                                    <div class="Data tab-active" id="Personal_data" data-tab-content>
+                                        <div class="content">
+                                            <p class="title-content">الاسم بالكامل</p>
+                                            <p class="subTitle-content">محمد حازم رمضان حجى</p>
+                                        </div>
+                                        <div class="content">
+                                            <p class="title-content">رقم الهاتف</p>
+                                            <p class="subTitle-content">0102772564</p>
+                                        </div>
+                                        <div class="content">
+                                            <p class="title-content">رقم الهوية</p>
+                                            <p class="subTitle-content">0564165165</p>
+                                        </div>
+                                        <div class="content">
+                                            <p class="title-content">رقم الإقامة</p>
+                                            <p class="subTitle-content">065156168516848</p>
+                                        </div>
+                                        <div class="content">
+                                            <button class="btn" style="margin: 0 auto;"><img src="../images/edit.svg" alt=""> تعديل</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Carrier_data content-->
+                                    <div class="Data" id="Carrier_data" data-tab-content>
+                                        <div class="content">
+                                            <p class="title-content">رقم الناقلة</p>
+                                            <p class="subTitle-content">5151521</p>
+                                        </div>
+                                        <div class="content">
+                                            <p class="title-content">رقم الكليشة</p>
+                                            <p class="subTitle-content">57/2</p>
+                                        </div>
+                                        <div class="content">
+                                            <p class="title-content-two">السائقين <span>(3)</span></p>
+                                            <div class="subTitle-content-two">
+                                                <ul class="nav-subTitle-content">
+                                                    <li>
+                                                        <img src="../images/6.jpg" alt="" class="avatar rounded-circle" width="50px"> 
+                                                        <p class="name">عامر محمد</p>
+                                                        <span>المالك</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../images/6.jpg" alt="" class="avatar rounded-circle" width="50px"> 
+                                                        <p class="name">عامر محمد</p>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../images/6.jpg" alt="" class="avatar rounded-circle" width="50px"> 
+                                                        <p class="name">عامر محمد</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <p class="title-content">الحمولة</p>
+                                            <p class="subTitle-content">40 طن</p>
+                                        </div>
+                                        <div class="content">
+                                            <p class="title-content">مودل الناقلة</p>
+                                            <p class="subTitle-content">مرسيدس</p>
+                                        </div>
+                                        <div class="content">
+                                            <p class="title-content">حالة الناقلة</p>
+                                            <p class="subTitle-content">سليمة</p>
+                                        </div>
+                                        <div class="content">
+                                            <button class="btn btn-two" style="margin: 0 auto;">اذهب لصفحة الناقلة</button>
+                                        </div>
+                                    </div>
+
+                                    <!--Requests content-->
+                                    <div class="Requests" id="Requests" data-tab-content>
+                                        <div class="content">
+                                            <p class="title-content">رقم الناقلة <span>(350)</span></p>
+                                            <p class="subTitle-content">اجمالى المدفوع <span>45</span></p>
+                                            <p class="subTitle-content">اجمالى المكسب <span>45</span></p>
+                                        </div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">رقم الطلب</th>
+                                                <th scope="col">الاموال المدفوهة</th>
+                                                <th scope="col">المكتسبة</th>
+                                                <th scope="col">تاريخ الطلب</th>
+                                                <th scope="col">تاريخ التسليم</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>546</td>
+                                                <td>54</td>
+                                                <td>5/2/2019</td>
+                                                <td>5/2/2019</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>546</td>
+                                                <td>54</td>
+                                                <td>5/2/2019</td>
+                                                <td>5/2/2019</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>546</td>
+                                                <td>54</td>
+                                                <td>5/2/2019</td>
+                                                <td>5/2/2019</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                    
+                                    <!--Complaints content-->
+                                    <div class="Requests" id="Complaints" data-tab-content>
+                                        <div class="content">
+                                            <p class="title-content">شكتوى قدمها <span>(3)</span></p>
+                                        </div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">رقم الطلب</th>
+                                                <th scope="col">رقم الشكوى</th>
+                                                <th scope="col">سبب الشكوى</th>
+                                                <th scope="col">تاريخ </th>
+                                                <th scope="col">الوصف</th>
+                                                <th scope="col"></th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>546</td>
+                                                <td>54</td>
+                                                <td>5/2/2019</td>
+                                                <td class="desc">العميل اعطيتة الحمولة ولم يعطينى المال...</td>
+                                                <td class="ongoing">جارية</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>546</td>
+                                                <td>54</td>
+                                                <td>5/2/2019</td>
+                                                <td class="desc">العميل اعطيتة الحمولة ولم يعطينى المال...</td>
+                                                <td class="closed">تم أغلاقها</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="content">
+                                            <p class="title-content">شكاوى ضدة <span>(350)</span></p>
+                                        </div>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">رقم الطلب</th>
+                                                <th scope="col">رقم الشكوى</th>
+                                                <th scope="col">سبب الشكوى</th>
+                                                <th scope="col">تاريخ </th>
+                                                <th scope="col">الوصف</th>
+                                                <th scope="col"></th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>546</td>
+                                                <td>54</td>
+                                                <td>5/2/2019</td>
+                                                <td class="desc">العميل اعطيتة الحمولة ولم يعطينى المال...</td>
+                                                <td class="ongoing">جارية</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>546</td>
+                                                <td>54</td>
+                                                <td>5/2/2019</td>
+                                                <td class="desc">العميل اعطيتة الحمولة ولم يعطينى المال...</td>
+                                                <td class="closed">تم أغلاقها</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!--Personal_data content-->
+                                    <div class="Data" id="Penalties" data-tab-content>
+                                        <div class="content">
+                                            <p class="title-content">مرات الحظر</p>
+                                            <p class="subTitle-content">4849</p>
+                                        </div>
+                                        <div class="content">
+                                            <p class="title-content">الحالة</p>
+                                            <p class="subTitle-content">
+                                                <span class="badge badge-one"><img src="../images/banRed.svg" alt=""> محظور</span>
+                                            </p>
+                                        </div>
+                                        <div class="content">
+                                            <button class="btn" style="margin: 0 auto;"> إلغاء العقوبة</button>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript
+        ================================================== -->
+        <script src="../js/vendor/jquery-3.4.1.min.js"></script>
+        <script src="../js/vendor/jquery.steps.js"></script>
+        <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+        <script src="../js/sweetalert2.all.min.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

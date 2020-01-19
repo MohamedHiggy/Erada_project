@@ -146,11 +146,10 @@
                             <table class="table table-borderless tab-active" id="Ongoing" data-tab-content>
                                 <thead>
                                     <tr class="border-radius">
-                                        <th scope="col">رقم الشكوى</th>
+                                        <th scope="col">رقم العقوبة</th>
                                         <th scope="col">رقم الطلب</th>
-                                        <th scope="col">مصدر الشكوى</th> 
+                                        <th scope="col">سبب الشكوى</th> 
                                         <th scope="col">رقم الهاتف</th>
-                                        <th scope="col">التاريخ</th>
                                         <th scope="col">الوصف</th>
                                     </tr>
                                 </thead>
@@ -158,13 +157,11 @@
                                     <tr class="table-light">
                                         <td class="first-redius-border">5</td class="redius-border">
                                         <td>546</td>
-                                        <td>السائق</td>
                                         <td>لم يتم الدفع</td>
                                         <td>01025721040</td>
-                                        <td>5/2/2019</td>
                                         <td class="report-desc">العميل اعطيتة الحمولة ولم يعطينى المال...</td>
                                         <td class="buttons">
-                                            <button type="button" class="btn btn-light refuse punishment">إلغاء العقوبة</button>
+                                            <button type="button" class="btn btn-light refuse punishment" data-toggle="modal" data-target="#exampleModalCenter">إلغاء العقوبة</button>
                                         </td>
                                         <td class="last-redius-border">
                                             <span class="td-dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -183,11 +180,10 @@
                             <table class="table table-borderless" id="Accepted" data-tab-content>
                                 <thead>
                                     <tr class="border-radius">
-                                        <th scope="col">رقم الشكوى</th>
+                                        <th scope="col">رقم العقوبة</th>
                                         <th scope="col">رقم الطلب</th>
-                                        <th scope="col">مصدر الشكوى</th> 
+                                        <th scope="col">سبب الشكوى</th> 
                                         <th scope="col">رقم الهاتف</th>
-                                        <th scope="col">التاريخ</th>
                                         <th scope="col">الوصف</th>
                                     </tr>
                                 </thead>
@@ -195,10 +191,8 @@
                                     <tr class="table-light">
                                         <td class="first-redius-border">5</td class="redius-border">
                                         <td>546</td>
-                                        <td>السائق</td>
                                         <td>لم يتم الدفع</td>
                                         <td>01025721040</td>
-                                        <td>5/2/2019</td>
                                         <td class="report-desc">العميل اعطيتة الحمولة ولم يعطينى المال...</td>
                                         <td class="last-redius-border">
                                             <span class="td-dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -214,6 +208,31 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+           <!-- Modal -->
+        <div class="modal fade manger-reports-model" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">سبب إلغاء العقوبة</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="اكتب السبب">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="المبلغ المدفوع ان وجد">
+                            </div>
+                            <button type="submit" class="btn btn-primary">تأكيد السبب</button>
+                        </form>
                     </div>
                 </div>
             </div>
